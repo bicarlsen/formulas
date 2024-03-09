@@ -11,7 +11,8 @@ import os
 import collections
 import os.path as osp
 
-name = 'syre-formulas'
+name = 'formulas'
+dist_name = 'syre-formulas'
 mydir = osp.dirname(__file__)
 
 
@@ -60,7 +61,7 @@ def get_long_description(cleanup=True):
 
 
 proj_ver = read_project_version()
-url = 'https://github.com/bicarlsen/formulas'
+url = 'https://github.com/bicarlsen/%s' % name
 download_url = '%s/tarball/v%s' % (url, proj_ver)
 project_urls = collections.OrderedDict((
     ('Documentation', 'http://%s.readthedocs.io' % name),
@@ -93,7 +94,7 @@ if __name__ == '__main__':
     ]
 
     setup(
-        name=name,
+        name=dist_name,
         version=proj_ver,
         packages=find_packages(exclude=[
             'test', 'test.*', 'doc', 'doc.*', 'binder', 'requirements'
@@ -102,8 +103,8 @@ if __name__ == '__main__':
         project_urls=project_urls,
         download_url=download_url,
         license='EUPL 1.1+',
-        author='Vincenzo Arcidiacono',
-        author_email='vinci1it2000@gmail.com',
+        author='Brian Carlsen',
+        author_email='carlsen.bri@gmail.com',
         description='Parse and compile Excel formulas and workbooks in python '
                     'code.',
         long_description=long_description,
