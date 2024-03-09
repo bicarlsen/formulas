@@ -1,18 +1,24 @@
 .. _start-quick:
 
+#####
+NOTE:
+#####
+This is a temporary fork of the `formulas <https://` used to incorporate new functionality
+more quickly than the original repo.
+
 ##################################################
 formulas: An Excel formulas interpreter in Python.
 ##################################################
 |pypi_ver| |test_status| |cover_status| |docs_status|
 |github_issues| |python_ver| |proj_license| |binder|
 
-:release:       1.2.7
-:date:          2023-11-15 01:00:00
-:repository:    https://github.com/vinci1it2000/formulas
-:pypi-repo:     https://pypi.org/project/formulas/
+:release:       1.2.8
+:date:          2024-03-09 01:00:00
+:repository:    https://github.com/bicarlsen/formulas
+:pypi-repo:     https://pypi.org/project/syre-formulas/
 :docs:          http://formulas.readthedocs.io/
-:wiki:          https://github.com/vinci1it2000/formulas/wiki/
-:download:      http://github.com/vinci1it2000/formulas/releases/
+:wiki:          https://github.com/bicarlsen/formulas/wiki/
+:download:      http://github.com/bicarlsen/formulas/releases/
 :donate:        https://donorbox.org/formulas
 :keywords:      excel, formulas, interpreter, compiler, dispatch
 :developers:    .. include:: AUTHORS.rst
@@ -36,7 +42,7 @@ To install it use (with root privileges):
 
 .. code-block:: console
 
-    $ pip install formulas
+    $ pip install syre-formulas
 
 Or download the last git version and use (with root privileges):
 

@@ -11,7 +11,7 @@ import os
 import collections
 import os.path as osp
 
-name = 'formulas'
+name = 'syre-formulas'
 mydir = osp.dirname(__file__)
 
 
@@ -60,7 +60,7 @@ def get_long_description(cleanup=True):
 
 
 proj_ver = read_project_version()
-url = 'https://github.com/vinci1it2000/%s' % name
+url = 'https://github.com/bicarlsen/formulas'
 download_url = '%s/tarball/v%s' % (url, proj_ver)
 project_urls = collections.OrderedDict((
     ('Documentation', 'http://%s.readthedocs.io' % name),
